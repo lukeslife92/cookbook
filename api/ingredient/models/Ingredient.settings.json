@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "ingredient",
+  "info": {
+    "name": "ingredient",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "description": {
+      "default": "",
+      "type": "text"
+    },
+    "recipes": {
+      "collection": "recipe",
+      "via": "ingredients",
+      "dominant": true
+    }
+  }
+}
